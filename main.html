@@ -2,16 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Главная</title>
-	<link rel="stylesheet" href="style-main.css">
+	<title>Выбор программы</title>
+	<script src="scripts/navigation.js"></script>
+	<link rel="stylesheet" href="styles/style-main.css">
 </head>
 <body>
 	<div class="chose_program">
-		<div class="chose_program_box">
+		<div class="chose_program_box" onclick="changeContent('word')">
 			<img src="resourses/img/word.svg"></img>
 			<label>Word</label>
 		</div>
-		<div class="chose_program_box">
+		<div class="chose_program_box" onclick="changeContent('visio')">
 			<img src="resourses/img/visio.svg"></img>
 			<label>Visio</label>
 		</div>
