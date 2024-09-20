@@ -1,40 +1,76 @@
 * {
+	//запрет выделения
+	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	//запрет drag drop
+	user-drag: none;
+	-webkit-user-drag: none;
 }
 
 .chose_program{
 	display: flex;  
-	max-width: 750px;
-	width: 75%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content:center;
+	width: 80%;
+	height: 80%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
+
+@media screen and (max-width:480px){
+	flex-direction: column;
+}
+
+@media screen and (min-width:481px){
+	flex-direction: row;
+}
 }
 
 .chose_program_box{
 	background-color: #d4cfdc;
- 	box-shadow: 1px 1px 1px #b3abbf;
-	width: 40%;
-	margin: 0 auto;
-	padding: 1.5%;
-	border-radius: 15px;
+ 	box-shadow: 1px 1px 1px #b3abbf;	
+	margin: 1.5%;
+	padding: 3.5%;
+	border-radius: 4.5%;
 	align-items: center;
 	justify-content: center;
-	display:flex; 
-	flex-direction: column;
+	display:flex; 	
+
+@media screen and (max-width:480px){
+ width: 85%;
+ height: auto;
+ flex-direction: row;
+}
+
+@media screen and (min-width:481px){
+ aspect-ratio: 1 / 1;
+ width: 35%;
+ flex-direction: column;
+}
 }
 
 .chose_program_box > img{
-	width: 75%;
+
+@media screen and (max-width:480px){
+ aspect-ratio: 1 / 1;
+ height: 45%;
+}
+
+@media screen and (min-width:481px){
+ aspect-ratio: 1 / 1;
+ width: 75%;
+}
 }
 
 .chose_program_box:hover{
 	transform: scale(1.05);
+	box-shadow: 1px 1px 3px 1px #b3abbf;
 }
 
 .chose_program_box:active{
