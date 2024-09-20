@@ -1,0 +1,4 @@
+.half-line{
+border: solid;
+stroke-dasharray=4 1;
+}

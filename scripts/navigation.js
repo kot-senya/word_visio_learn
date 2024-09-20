@@ -1,9 +1,13 @@
-var parentWindow = window.parent;
-//var parentElement = parentWindow.document.getElementById("myElement");
+var programName = "none";
 
-//var mainContainer = document.getElementById('maincontainer');
-var programName = "none"
+/* Существующие страницы
+100 - word
 
+
+200 - visio
+*/
+
+//переход на страницу приожения
 function changeContent(param) {
 
 switch(param) {
