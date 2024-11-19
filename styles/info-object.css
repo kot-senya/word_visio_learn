@@ -2,3 +2,88 @@
 border: solid;
 stroke-dasharray=4 1;
 }
+
+/* Оформление таблицы */
+
+table {
+border-collapse: collapse; /* убираем пустые промежутки между ячейками */
+border: 2px solid grey;    /* устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px */
+border-radius: 10px;
+width: 95%;
+}
+
+/* 
+Границы ячеек заголовка каждого столбца задаются для элемента th 
+Границы ячеек тела таблицы задаются для элемента td
+*/
+th, td {
+   border: 1px solid grey;
+   padding: 2px 5px;
+}
+
+th:first-child,
+td:first-child {
+  width: 40%;
+  background: LightCyan;
+}
+
+/* ------------------------------------------------------
+Пользовательские штуки
+-------------------------------------------------------*/
+marker{
+ background-color: blue;
+}
+.video{
+  max-width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Для div*/
+.stepClass{
+  background-color: HoneyDew;
+  padding: 10px 18px;
+  border-radius:15px;
+}
+step{
+
+}
+
+tabs, tabs-title {
+ padding: 0px;
+ margin: 0px;
+ clear: both; 
+ width: 95%; 
+ border: 0; 
+}
+
+tab-title{
+ cursor: pointer; /*Курсор в виде пальца*/
+ background: #AAA; /*Фон темно-серый*/
+ margin-right: 5px; /*Справа от элемента отступ в 10 пикселей*/
+ padding: 5px 5px 10px 5px; /*Внутри элемента отступы справа и слева в 5 пикселей*/
+ list-style: none; /*Убираем точки у li*/
+ float: left; /*Делаем так что бы li располагались горизонтально*/
+ border-radius: 10px 10px 0 0;
+}
+
+tab {
+ margin: 5px 0 0 0;
+ padding: 10px; /*Внутренний отступ в 10 пикселей*/
+ display: none; /*Не показываем*/
+ background: #CCC; /*Светло-серый фон*/
+ text-align: justify; /*Выравниваем текст по ширине элемента*/
+ border-radius: 10px;
+}
+.selected {
+ display: block;
+} 
+
+.selected-li, tabs-title li:hover {
+ background: #CCC;
+} 
+
+tabs-title { 
+ background: #AAA; /*Фон темно-серый*/
+ height: 20px; /*Высота 20 пикселей*/
+}
